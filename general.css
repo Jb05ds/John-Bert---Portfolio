@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  font-family: Roboto, Arial;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #0a192f, #112240, #1d3557, #0a192f);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
