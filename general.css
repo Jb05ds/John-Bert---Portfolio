@@ -2,7 +2,6 @@ body {
   margin: 0px;
   font-family: Roboto, Arial;
   margin: 0;
-  height: 100vh;
   color: white;
   position: relative;
   background: url(images/back2.1.jpeg);
@@ -15,4 +14,26 @@ body {
    #1b2735 70%, 
    #090a0f); 
   background-size: 400% 400%; */
+}
+html {
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {display: none;}
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#home {
+  height: 100vh;
+  padding-top: 80px;
+  margin-top: -80px;
+  background: url(images/back2.1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #d7c0ae, #f8ede3);
+  background-size: 400% 400%;
+  min-height: 100vh;
 }

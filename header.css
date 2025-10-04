@@ -5,8 +5,12 @@
     align-content: center;
     height: 60px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
     backdrop-filter: blur(3px);
     font-family: Poppins, Montserrat;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
 }
 .left-side-header {
     width: 100%;
@@ -35,26 +39,28 @@
     to {transform: translateX(0%); opacity: 1;}
 }
 
-.home,
-.about, 
-.skills, 
-.projects,
-.about,
-.contact {
+ .home,
+ .about, 
+ .skills, 
+ .projects,
+ .about,
+ .contact,
+ .blog {
     text-decoration: none;
     color: white;
     animation:  slideIn 1.2s ease-in-out forwards;
 }
-@keyframes slideIn {
+ @keyframes slideIn {
     from { transform: translateY(-100%); opacity: 0.3; }
     to {transform: translateY(0%); opacity: 1;}
 }
-    .home::after,
-    .about::after, 
-    .skills::after, 
-    .projects::after,
-    .about::after,
-    .contact::after {
+ .home::after,
+ .about::after, 
+ .skills::after, 
+ .projects::after,
+ .about::after,
+ .contact::after,
+ .blog::after {
         display: flex;
         align-items: center;
         content: "";
@@ -62,32 +68,35 @@
         bottom: -5px;
         height: 1px;
         width: 100%;
-        background: white;
+        background: lightblue;
         opacity: 0;
         transform: scaleX(0);
         transform-origin: center;  
         transition: transform 0.35s ease-in-out, opacity 0.15s ease-in-out;
-    }
-    .home:hover::after,
-    .about:hover::after, 
-    .skills:hover::after, 
-    .projects:hover::after,
-    .about:hover::after,
-    .contact:hover::after {
+}
+ .home:hover::after,
+ .about:hover::after, 
+ .skills:hover::after, 
+ .projects:hover::after,
+ .about:hover::after,
+ .contact:hover::after,
+ .blog:hover::after {
         transform: scaleX(1);
         opacity: 1;
         z-index: 100;
         width: 100%;
-    }
-    .home:hover,
-    .about:hover, 
-    .skills:hover, 
-    .projects:hover,
-    .about:hover,
-    .contact:hover {
-        color: lightblue;
-    }
-.start {
+}
+ .home:hover,
+ .about:hover, 
+ .skills:hover, 
+ .projects:hover,
+ .about:hover,
+ .contact:hover,
+ .blog:hover {
+    color: lightblue;
+}
+ .start {
+    margin-top: -100px;
     height: 75%;
     display: flex;
     align-items: center;
@@ -95,7 +104,7 @@
     align-content: center;
     flex-direction: column;
 }
-.name {
+ .name {
   font-size: 48px;
   font-weight: bold;
   white-space: nowrap;
@@ -104,36 +113,37 @@
   animation: typing 1.2s steps(25, end), blink 1.5s step-end infinite;
   margin: 0px;
 }
-@keyframes typing {
+ @keyframes typing {
   from { width: 0 }
   to { width: 19ch }
 }
 
-@keyframes blink {
+ @keyframes blink {
   50% { border-color: transparent }
 }
-.webdev {
-    margin-top: 0px;
+ .webdev {
+    margin-top: -5px;
     font-family: italic;
-    animation: fadingIn 1.5s ease-in forwards;
+    animation: fadingIn 1s ease-in forwards;
+    color: #d4af37;
 }
-@keyframes fadingIn {
+ @keyframes fadingIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
 
-.button-container {
+ .button-container {
     display: flex;
     justify-content: space-between;
     width: 20%;
     animation: buttonSlide 1.2s ease-in-out forwards;
 }
-@keyframes buttonSlide {
+ @keyframes buttonSlide {
     from {transform: translateY(500%); opacity: 0;}
     to {transform: translateY(0%); opacity: 1;}
 }
-.knowMe {
+ .knowMe {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
@@ -144,14 +154,17 @@
        #f1e0c6, 
        #c49a6c);
 }
-.contacts {
+ .knowMeAnchor {
+
+}
+ .contacts {
     border-radius: 5px;
     padding: 10px 25px;
     border: 1px solid white;
     color: white;
     background: none;
 }
-.contacts:hover, .knowMe:hover {
+ .contacts:hover, .knowMe:hover {
      background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.7),
