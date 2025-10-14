@@ -36,4 +36,6 @@ html {
   background: linear-gradient(135deg, #d7c0ae, #f8ede3);
   background-size: 400% 400%;
   min-height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
 }

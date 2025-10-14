@@ -4,29 +4,39 @@
   padding-top: 35px;
   padding-bottom: 0px;
   font-size: 50px;
-  background-image: url(images/asd122.jpg);
+  background-image: url(images/background-container-4.jpg);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
  .aboutme-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    height: 350px;
+    grid-template-columns: 1fr 350px 1fr;
+    column-gap: 0px;
+    height: 250px;
     margin: 0 30px;
 }
  .self-intro-container {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(145deg, #0d0d1a, #1a1a2e);
+    background: url(images/background-container-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border: 1px solid rgba(0, 255, 255, 0.2);
     border-radius: 15px;
     padding: 10px 30px;
+    margin-right: -69px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
     color: white;
     text-align: center;
+    height:90%;
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+    border-bottom: solid 2px black;
     
 }
+
  .self-intro-container h3 {
   background-image: url(images/asd122.jpg);
   -webkit-text-fill-color: transparent;
@@ -36,25 +46,35 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(145deg, #0d0d1a, #1a1a2e);
+    background: url(images/background-container-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 255, 255, 0.2);
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
     color: white;
+    height: 80%;
+    margin-left: -90px;
+    clip-path: polygon(42% 0, 100% 0, 100% 100%, 0% 100%);
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
 }
  .more-info-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 15px;
     line-height: 25px;
     padding-bottom: 15px;
-    
+    position: relative;
+
 }
+
  .more-info-container div {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 255, 255, 0.3);
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -62,6 +82,8 @@
   font-size: 1rem;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  width: 90%;
 }
  .more-info1:hover,
  .more-info2:hover,
@@ -77,4 +99,16 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     
+}
+.more-info1 {
+  margin-left: 77px;
+}
+.more-info2 {
+  margin-left: 25px;
+}
+.more-info3 {
+  margin-left: -25px;
+}
+.more-info4 {
+  margin-left: -82px;
 }
