@@ -16,3 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.classList.toggle('nav-open');
   });
 });
+
+document.querySelectorAll('.js-readmore').forEach((readmore) => {
+  readmore.addEventListener('click', () => {
+    alert("Still writing this one hihihi, will upload sooonnn")
+  })
+})
