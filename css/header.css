@@ -1,0 +1,61 @@
+:root {
+  --coffee-dark: #3E2F23;
+  --coffee-medium: #5A4634;
+  --coffee-light: #CBB89D;
+  --coffee-cream: #FAF7F2;
+  --coffee-accent: #A88665;
+  --coffee-border: #E3D7C6;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  background: rgba(19,13,9,0.6);
+  backdrop-filter: blur(6px);
+  z-index: 80;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+
+.left-side-header .File {
+  color: var(--coffee-cream);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.right-side-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.right-side-header a {
+  color: var(--coffee-cream);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all .18s ease;
+}
+
+.right-side-header a:hover,
+.right-side-header a:focus {
+  background: rgba(255,255,255,0.04);
+  color: var(--coffee-accent);
+  transform: translateY(-2px);
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  color: var(--coffee-cream);
+  border: none;
+  font-size: 1.25rem;
+}

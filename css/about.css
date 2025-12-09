@@ -1,0 +1,48 @@
+.about-section {
+  padding: 60px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 28px;
+  align-items: start;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.94));
+  border-radius: 12px;
+  padding: 22px;
+  border: 1px solid var(--coffee-border);
+  box-shadow: 0 8px 30px rgba(62,47,35,0.06);
+  position: relative;
+}
+
+.lead {
+  color: #4b3c31;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.quick-info {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 18px;
+  color: #5a4a3f;
+}
+
+.quick-info li { padding: 6px 0; }
+
+.about-education{ margin-top:18px; color:#5a4a3f; }
+
+.edu-item{ font-size:0.95rem; }
+
+.about-actions {
+  position: absolute;
+  bottom: 80px;
+  right: 12rem;
+}
+
+.about-actions .primary {
+  margin-right: 40px;
+}

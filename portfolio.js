@@ -1,6 +1,18 @@
-const navigationBar = document.querySelector('.more-info-container div');
-navigationBar.addEventListener('click', function() {
-    if(navigationBar.contains('more-info-container div'){
-        document.body.style.background = 'gray';
-    })
-})
+document.addEventListener('DOMContentLoaded', function () {
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(ent => {
+      if (ent.isIntersecting) {
+        ent.target.classList.add('visible');
+        obs.unobserve(ent.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  const toggle = document.getElementById('navToggle');
+  toggle && toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('nav-open');
+  });
+});

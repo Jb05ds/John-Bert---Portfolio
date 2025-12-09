@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>John Bert Delos Santos - Portfolio</title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/x-icon.webp" type="image/webp">
+</head>
+<body>
+  <header class="header">
+    <div class="left-side-header">
+      <a class="File" href="#home"><h1 class="File">JB Portfolio</h1></a>
+    </div>
+
+    <nav class="right-side-header" id="mainNav">
+      <a class="home" href="#home">Home</a>
+      <a class="about" href="#about">About</a>
+      <a class="skills" href="#skills">Skills</a>
+      <a class="projects" href="#projects">Projects</a>
+      <a class="blog" href="#blog">Blog</a>
+      <a class="contact" href="#contact">Contact</a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <main id="home" class="hero-section">
+    <div class="hero-inner container">
+      <div class="hero-text load-fade">
+        <h2 class="greeting">Hi! I'm</h2>
+        <h1 class="hero-name">John Bert Delos Santos</h1>
+        <p class="hero-sub">Web Developer</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#about">About Me</a>
+          <a class="btn btn-resume" href="images/files/Delos Santos_Resume.pdf" target="_blank" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <section id="about" class="about-section reveal">
+    <div class="container about-grid">
+      <div class="about-left card">
+        <h2>About Me</h2>
+        <p class="lead">Aspiring Web Developer and 2nd year BSIT student seeking an internship opportunity to apply and strengthen my skills in HTML, CSS, JavaScript, and React. Motivated to learn from real-world projects, improve my coding discipline, and contribute to a development team while growing in a professional environment.</p>
+
+        <ul class="quick-info">
+          <li>📍 Commonwealth, Quezon City</li>
+          <li>🎓 ICCT College - BSIT (2nd Year)</li>
+          <li>📅 Availability: Mon, Tue, Fri, Sun</li>
+        </ul>
+      </div>
+
+      <div class="about-right card">
+        <div class="about-education">
+          <h3 class="small-title">Education</h3>
+          <div class="edu-item">
+            <strong>ICCT Colleges</strong><br>
+            Bachelor of Science in Information Technology (BSIT)<br>
+            Expected graduation: AUG 2027<br>
+            2nd Year - Trimestral System
+          </div>
+
+          <div class="edu-item" style="margin-top:10px">
+            <strong>STI College Fairview</strong><br>
+            Senior High School (STEM) - 2022-2024
+          </div>
+        </div>
+      </div>
+
+      <div class="about-actions">
+          <a class="btn primary" href="#projects">My projects</a>
+          <a class="btn outline" href="mailto:johnbertbertdelossantos480@gmail.com">Email me</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section reveal">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">What I work with - core tools & technologies</p>
+
+      <div class="skills-grid">
+        <div class="my-skills"><img src="images/html2.png" alt=""><h4>HTML</h4></div>
+        <div class="my-skills"><img src="images/css.png" alt=""><h4>CSS</h4></div>
+        <div class="my-skills"><img src="images/js.png" alt=""><h4>JavaScript</h4></div>
+        <div class="my-skills"><img src="images/react.png" alt=""><h4>ReactJS</h4></div>
+        <div class="my-skills"><img src="images/node.png" alt=""><h4>NodeJS (Beginner)</h4></div>
+        <div class="my-skills"><img src="images/git.png" alt=""><h4>Git & GitHub</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section reveal">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">A collection of projects I've built and continue improving as I grow as a developer.</p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-thumb" style="background-image: url('images/project-thumb-3.jpg');"></div>
+          <div class="project-body">
+            <h3>Amazon JS Mini-Store</h3>
+            <p class="muted">JavaScript • DOM</p>
+            <p class="small">Mini e-commerce UI implementing add-to-cart, quantity updates, and price calculations using vanilla JS.</p>
+            <div class="project-actions">
+              <a class="btn small" href="https://github.com/Jb05ds/amazon-js-project" target="_blank">Code</a>
+              <a class="btn small outline" href="#" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" style="background-image: url('images/project-thumb-2.jpg');"></div>
+          <div class="project-body">
+            <h3>Personal Portfolio</h3>
+            <p class="muted">HTML • CSS • JS</p>
+            <p class="small">This site is built to showcase projects and skills, with responsive layout and smooth animations.</p>
+            <div class="project-actions">
+              <a class="btn small" href="https://github.com/Jb05ds/John-Bert---Portfolio" target="_blank">Code</a>
+              <a class="btn small outline" href="#" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" style="background-image: url('images/project-thumb-1.jpg');"></div>
+          <div class="project-body">
+            <h3>YouTube Clone - Homepage</h3>
+            <p class="muted">HTML & CSS</p>
+            <p class="small">Recreated YouTube homepage to practice nested grid/flex layouts, pseudo-elements and visual hierarchy.</p>
+            <div class="project-actions">
+              <a class="btn small" href="https://github.com/Jb05ds/front-end-youtube-clone" target="_blank">Code</a>
+              <a class="btn small outline" href="https://jb05ds.github.io/front-end-youtube-clone/" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" style="background-image: url('images/project-thumb-1.jpg');"></div>
+          <div class="project-body">
+            <h3>YouTube Clone - Video Page</h3>
+            <p class="muted">HTML & CSS</p>
+            <p class="small">A follow-up project focused on responsive design, positioning, and refining interface elements to mimic YouTube's watch page layout.</p>
+            <div class="project-actions">
+              <a class="btn small" href="https://github.com/Jb05ds/Youtube-video-page-clone" target="_blank">Code</a>
+              <a class="btn small outline" href="https://jb05ds.github.io/Youtube-video-page-clone/" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" style="background-image: url('images/project-thumb-2.jpg');"></div>
+          <div class="project-body">
+            <h3>JavaScript Mini Projects Collection</h3>
+            <p class="muted">JS</p>
+            <p class="small">A collection of small JavaScript exercises built while learning DOM manipulation, events, and basic logic.</p>
+            <div class="project-actions">
+              <a class="btn small" href="https://github.com/Jb05ds/JavaScript_mini-projects" target="_blank">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card coming-soon">
+          <p class="muted">In Development</p>
+          <div class="muted">More code. More learning. More projects soon.</div>
+        </article>  
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog-section reveal">
+    <div class="container">
+      <h2 class="section-title">Behind the Developer</h2>
+      <p class="section-sub">Short posts about learnings, bug fixes, and study notes.</p>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <h3>About Me (Personal Details)</h3>
+          <p class="muted small">A quick introduction about who I am beyond coding my interests, hobbies, and what motivates me.</p>
+          <a class="readmore" href="#">Read</a>
+        </article>
+
+        <article class="blog-card">
+          <h3>My Coding Journey</h3>
+          <p class="muted small">How I started learning programming, the challenges I faced, and how I'm improving step by step.</p>
+          <a class="readmore" href="#">Read</a>
+        </article>
+
+        <article class="blog-card">
+          <h3>My Goals / Future Plans</h3>
+          <p class="muted small">What I aim to learn next, my career direction, and the projects I want to build in the future.</p>
+          <a class="readmore" href="#">Read</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="contact-footer reveal">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Get in touch</h3>
+        <p>johnbertbertdelossantos480@gmail.com</p>
+        <p>+63 969 454 3380</p>
+        <p>Commonwealth, Quezon City</p>
+      </div>
+      <div class="footer-social">
+        <h4>Social</h4>
+        <a href="https://github.com/Jb05ds" target="_blank">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/john-bert-delos-santos-107743323/" target="_blank">LinkedIn</a><br>
+        <a href="https://www.facebook.com/jb.delossantos.12">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
